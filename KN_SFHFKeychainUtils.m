@@ -31,18 +31,18 @@
 #error This file must be compiled with ARC.
 #endif
 
-#import "SFHFKeychainUtils.h"
+#import "KN_SFHFKeychainUtils.h"
 #import <Security/Security.h>
 
 static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < 30000 && TARGET_IPHONE_SIMULATOR
-@interface SFHFKeychainUtils (PrivateMethods)
+@interface KN_SFHFKeychainUtils (PrivateMethods)
 + (SecKeychainItemRef) getKeychainItemReferenceForUsername: (NSString *) username andServiceName: (NSString *) serviceName error: (NSError **) error;
 @end
 #endif
 
-@implementation SFHFKeychainUtils
+@implementation KN_SFHFKeychainUtils
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < 30000 && TARGET_IPHONE_SIMULATOR
 
