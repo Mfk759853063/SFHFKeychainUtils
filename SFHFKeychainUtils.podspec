@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint KN_SFHFKeychainUtils.podspec' to ensure this is a
+#  Be sure to run `pod spec lint SFHFKeychainUtils.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "KN_SFHFKeychainUtils"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of KN_SFHFKeychainUtils."
+  s.name         = "SFHFKeychainUtils"
+  s.version      = "1.0.0"
+  s.summary      = "A small ARC compliant utility to interact with Apple's Keychain Services"
 
   s.description  = <<-DESC
-                   A longer description of KN_SFHFKeychainUtils in Markdown format.
+                   A longer description of SFHFKeychainUtils in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/KN_SFHFKeychainUtils"
+  s.homepage     = "https://github.com/Mfk759853063/SFHFKeychainUtils"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,10 +53,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = "kwep_vbn"
-  # Or just: s.author    = ""
-  # s.authors            = { "" => "" }
-  # s.social_media_url   = "http://twitter.com/"
+  s.author             = { "Mfk759853063" => "email@address.com" }
+  # Or just: s.author    = "Mfk759853063"
+  # s.authors            = { "Mfk759853063" => "email@address.com" }
+  # s.social_media_url   = "http://twitter.com/Mfk759853063"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -65,10 +65,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "7.0"
+  # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "7.0"
+  # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Mfk759853063/SFHFKeychainUtils.git", :commit => "1eccaf86ce842b69d09009a2ad38e7c21d7c9d65" }
+  s.source       = { :git => "https://github.com/Mfk759853063/SFHFKeychainUtils.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   s.source_files  = "*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "*.{h,m}"
+  # s.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
