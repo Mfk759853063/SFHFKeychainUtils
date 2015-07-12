@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Mfk759853063/SFHFKeychainUtils.git", :commit => "eea0a65ffa193e8bc2c1072bc4f32236f4057a95" }
+  s.source       = { :git => "https://github.com/Mfk759853063/SFHFKeychainUtils.git", :commit => "1eccaf86ce842b69d09009a2ad38e7c21d7c9d65" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
